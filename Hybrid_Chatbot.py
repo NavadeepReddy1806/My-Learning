@@ -6,7 +6,7 @@ import re
 st.set_page_config(page_title="My Chatbot",layout="centered")
 st.title("Chatbot")
 
-openai.api_key="tgp_v1_uKwK548I_W6IvZ2P0_TFsaX6ZcV3E6aSr-qEn4hfj2s"
+openai.api_key="Use your own"
 openai.api_base="https://api.together.xyz/v1"
 
 rules={
@@ -65,4 +65,5 @@ with st.sidebar:
             st.session_state.history=[]
             st.rerun()
     else:
+
         st.info("No chat history yet.")
